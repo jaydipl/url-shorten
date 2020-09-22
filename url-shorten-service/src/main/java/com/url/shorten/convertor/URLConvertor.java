@@ -20,8 +20,10 @@ public class URLConvertor {
 	
 	@PostConstruct
 	public void setValues() {
-		this.base62Characters = base62String.toCharArray();
-		this.base62length = base62Characters.length;
+		if(null != base62String) {
+			this.base62Characters = base62String.toCharArray();			
+			this.base62length = base62Characters.length;
+		}
 	}
 	
 	/**
