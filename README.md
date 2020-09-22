@@ -24,3 +24,16 @@ mvn spring-boot:run
 
 ### Access Swagger URL
 `http://localhost:8300/swagger-ui.html`
+
+### Explore Rest APIs
+
+  POST /api/shorten
+  
+  Sample Request
+  ```JSON
+  {
+    "longUrl" : "https://github.com/jaydipl/url-shorten"
+  }
+  ```
+  GET /api/getFullUrl/`ABdf`
+  
